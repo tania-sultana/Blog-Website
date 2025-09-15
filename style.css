@@ -1,0 +1,503 @@
+:root{
+    --primary-color: #FEE2B3;
+    --secondary-color: gray;
+    --padding: 10px;
+    --transition: all 0.3s;
+    --border-radius:5px;
+    --box-shadow:1px 2px 8px rgba(205, 202, 202, 0.5);
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+   
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    /* padding: var(--padding); */
+    background-color: #FEE2B3;
+    cursor: pointer;
+    transition: var(--transition)
+}
+.btn:hover{
+    background-color: #FED48D;
+}
+#menu-icon{
+    display: none;
+}
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);   
+}
+/* .card:hover{
+    box-shadow: 1px 2px 8px rgba(205, 202, 202, 1)   
+} */
+/* ----------nav start here-------- */
+nav{
+    font-size: 24px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    
+}
+.nav{
+    min-height: 10vh;
+    background-color: var(--primary-color);
+    padding: 15px 0;  
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-head{
+    display:flex;
+    flex: 30%;
+   padding: 20px;
+    
+}
+.nav-lists{
+    flex: 70%;
+}
+.nav-link{
+       color: black;
+}
+.nav-link:hover{
+       color: gray;
+}
+/* ----------header section start here-------- */
+.header{
+    height: 60vh;
+    padding: 40px 0;
+    background-image: url('images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+   
+}
+.banner .banner-card{
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    
+}
+.banner-card-head{
+    font-size: 60px;
+    font-family: serif
+}
+.banner-card-paragraph{
+    font-size: 26px;
+    font-family: serif
+}
+ .form-start{
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    margin: 32px;
+    border-radius: 5px;
+    
+ }
+ .form{
+    display: flex;
+    flex-direction: column;
+ }
+ .form-head{
+    font-size: 26px;
+    color: #364d59;
+    margin: 20px 0;
+ }
+ .form-element{
+    margin-bottom: 20px;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: var(--border-radius);
+    color: gray;
+    border: 1px solid #D3D3D3;
+    width: 90%;
+ }
+.form-btn{
+    padding: 18px;
+    font-size: 20px;
+    width: 90%;
+}
+
+/* ---------Practice section start here------- */
+.practice-areas{
+    min-height: 80vh;
+    padding: 50px;
+}
+
+
+.header-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+.section-heading{
+    font-size: 40px;
+    padding: 18px;
+
+}
+.heading-sec{
+    color: gray;
+    padding-left: 5px;
+}
+.header-about{
+    font-size: 20px;
+    color: gray;
+}
+.practices{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+.practice{
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.prac-icon{
+    background-color: #FEE2B3;
+    margin: 20px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.practice-name{
+    font-size: 26px;
+}
+.practice-desc{
+    font-size: 18px;color: var(--secondary-color);
+    
+}
+/* ---------APointment section start here------- */
+.appointment-areas{
+    min-height: 60vh;
+    padding: 50px;
+    width: 100%;
+}
+.appointments{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+    padding: 20px;
+}
+.appointment{
+    gap: 16px;
+}
+.ap-img{
+    border: none;
+    border-radius: var(--border-radius);
+}
+.ap-desc{
+    padding-left: 20px;
+}
+
+.appointment-name{
+    font-size: 28px;
+    color: #364D59;
+    margin-bottom: 10px;
+}
+.appointment-desc{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.ap-btn{
+    padding: 10px;
+    font-size: 20px;
+}
+/* ---------Costomer section start here------- */
+.customer-areas{
+    min-height: 80vh;
+    padding: 50px;
+}
+
+.section-heading{
+    font-size: 40px;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    color: #364D59;
+}
+
+.customers{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+.customer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.customer-profile{
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    margin-top: 40px;
+    
+}
+.customer-profile-pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.profile-about{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    padding-left: 20px;
+   justify-content: center;
+   
+}
+.customer-name{
+    font-size: 20px;
+    color: #364D59;
+}
+.customer-title{
+    font-size: 20px;
+    color: gray;
+}
+.customer-desc{
+    font-size: 21px;
+    color: #364D59;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+/* ---------Solution section start here------- */
+.solution-areas{
+    min-height: 60vh;
+    padding: 50px;
+    width: 100%;
+}
+.solutions{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+    padding: 20px;
+}
+/* .solution{
+    gap: 16px;
+} */
+.solu-img{
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+
+.solution-name{
+    font-size: 34px;
+    color: #364D59;
+    margin-bottom: 10px;
+}
+.solution-desc {
+    font-size: 20px;
+    color: #364D59;
+}
+.solution > ul{
+      margin-top: 40px;
+}
+
+.solu-list{
+    color: #364D59;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.question{
+    border: none;
+    border-radius: var(--border-radius);
+    margin: 16px 0;
+    border-radius: var(--border-radius);
+    /* padding: 14px; */
+}
+.ques-nmbr{
+    border: 1px solid #D3D3D3;
+    border-radius: var(--border-radius);
+    padding: 14px;
+    font-size: 20px;
+    position: relative;
+}
+.ans{
+    background-color: papayawhip;
+    border: 1px solid gray;
+    /* width: 300px; */
+    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+
+
+
+
+@media (max-width:992px){
+    .products{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+      .practices{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        
+    }
+    .appointments{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .appointment:last-child{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .appointment-name{
+       font-size: 32px;
+        margin: 30px 0;
+    }
+    .appointment-desc{
+        font-size: 20px;
+        line-height: 35px;
+        
+    }
+    .ap-btn{
+        padding: 20px;
+        font-size: 20px;
+        margin: 30px 0;
+    }
+    .customers{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+    
+
+
+
+@media (max-width:768px)
+{
+    .flex-space-around{
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 0;
+    }
+
+    #menu-container {
+    text-align: center;
+    margin: 16px 0;
+    }
+
+    #menu-icon{
+        display: inline-block;  
+        cursor: pointer;
+    }
+
+    .hidden{
+        display: none;
+    }
+  
+    .banner-card{
+    width: 80%;
+    padding: 20px;
+    }
+
+    .form-start{
+        width: 70%;
+        padding: 20px;
+    }
+    
+    .form-element{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+   
+   .form>input{
+    width: 90%;
+   }
+
+    .header{
+        height: 100vh;
+    }
+     .practices{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    
+}
+  .appointment{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  
+}
+.customers{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+}
+
+   
+
+
+@media (max-width:600px){
+    .flex-space-around{
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 0;
+    }
+    #menu-container {
+    text-align: center;
+    margin: 16px 0;
+    }
+    #menu-icon{
+        display: inline-block;  
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+   .practices{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  
+}
+   
+    
+}
