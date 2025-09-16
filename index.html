@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is an ecommerce project">
     <title>Notary</title>
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="style.css">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+
 </head>
 <body>
-<!-- navbar start here -->
+
+    <!-- navbar start here -->
     <div id="menu-container">
         <i class="fas fa-bars fa-2x" id="menu-icon"></i>
     </div>
     <nav id="menu" class="hidden">
      
-        <div class="nav">
-            <h2 class="nav-head ">Notary</h2>
-            <!-- <ul class="nav-lists"> -->
-        <ul class="nav-lists flex-space-around">
+        <div class="nav  navbar">
+            <h2 class="nav-head">Notary</h2>
+        <ul class="nav-lists flex-space-around  navbar">
             <li class="nav-list"><a href="#" class="nav-link">Home</a></li>
             <li class="nav-list"><a href="#" class="nav-link">Prtactice Area</a></li>
             <li class="nav-list"><a href="#" class="nav-link">Testimonials</a></li>
@@ -30,8 +34,8 @@
         </ul>
         </div>
     </nav>
-    <!-- navbar end here -->
-    <!-- header start here -->
+<!-- navbar end here -->
+<!-- header start here -->
     <header class="header">   
         <div class="banner flex-space-around"> 
             <div class=" banner-card flex-center">
@@ -51,11 +55,12 @@
         
     </header>
     <main>
+     
         <section class="practice-areas">
-           <div class="header-section">
-             <h1 class="section-heading flex-center">Practice <span class="heading-sec">  Areas</span></h1>
-             <p class="header-about">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-           </div>
+            <div class="header-section">
+                <h1 class="section-heading flex-center">Practice <span class="heading-sec">  Areas</span></h1>
+                <p class="header-about">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
 
             <div class="practices">
                 <div class="practice card">
@@ -90,8 +95,8 @@
                 </div>
                         
             </div>
-
-            </section>
+        </section>
+      
         <section class="appointment-areas">
 
             <div class="appointments">
@@ -109,7 +114,7 @@
               
             </div>
 
-            </section>
+        </section>
 
         <section class="customer-areas">
            <div class="header-section">
@@ -154,7 +159,8 @@
                         
             </div>
 
-            </section>
+        </section>
+
         <section class="solution-areas">
 
             <div class="solutions">
@@ -174,42 +180,95 @@
                     </ul>
                     
                 </div>
-                <div class="solution">
-                    <!-- <div id="menu-container">
-                    <p class="menus-icon">How to download register?</p>
+                <div class=" solution faq-solution">
+                    <div id="solution-container">
+                        
+                        <ul class="faq">
+                            <!-- <li class="q"><i class="ion-chevron-right"></i>What does the term "Full-Tang" mean?</li> -->
+                            <li class="q">What does the term "Full-Tang" mean?</li>
+                            <li class="a">"Full-Tang" refers to knives where the blade goes all the way down through the handle to the end of the grip.</li>
+                            
+                            <li class="q">What is a bolster, and what benefits does it provide?</li>
+                            <li class="a">A knife bolster is the thick section between the handle and the blade, and it strengthens the knife, and gives better balance and control. However, there is much disagreement on whether or not it is necessary.</li>
+                            
+                            <li class="q">What are the differences between forged and laser-cut stamped knives?</li>
+                            <li class="a">Forged knives are stronger and retain their edge longer than stamped knives, which have more flexible blades. In the case of Wusthof, their forged knives go through 40 different steps in their factory, where the laser-cut knives go through 14 steps. Also, their forged knives include a bolster, which balances the knife and protects fingers, although bolsters can also be added to laser-cut knives. Laser-cut stamped knives can be of excellent quality too, however, and they are more economically priced.</li>
+                                        
+
+                        </ul>
                     </div>
-                    <div id="menus" class="hidden">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quae cupiditate doloribus perspiciatis asperiores nobis totam eum recusandae inventore tenetur, aliquid in blanditiis ex amet magnam saepe vero exercitationem placeat.</p>
-                        </div> -->
-
-
-
-
-
-
-
-
-                   <!-- <div class="question"> -->
-                        <!-- <a href="#" class="ques-nmbr">How to download register? <br>
-                            <span class="ans">Lorem, ipsum dolor sit amem, laboriosam illo ipsam perspiciatis voluptatem, face. </span>
-                        </a>
-                   </div>   
-                   </div>
-                   <div class="question">
-                        <p class="ques-nmbr">How to download and register?</p>
-                        <p class="ans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi optio autem, laboriosam illo ipsam perspiciatis voluptatem, facere itaque veritatis corrupti ducimus est, aliquam rem. Accusantium alias ea quas porro?</p>
-                   </div>
-                   <div class="question">
-                        <p class="ques-nmbr">How to download and register?</p>
-                        <p class="ans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi optio autem, laboriosam illo ipsam perspiciatis voluptatem, facere itaque veritatis corrupti ducimus est, aliquam rem. Accusantium alias ea quas porro?</p>
-                   </div> -->
                 </div>
-              
             </div>
+        </section>
 
-            </section>
+
+
+
+    <footer class="footer-section">
+            <!-- <section class="footer-areas"> -->
+           <div class="footers">
+                <div class="footer ftr-about">
+                    <h3 class="footer-heading"> About Us</h3>
+                    <p class="footer-pg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ad. Quos vero, deserunt, libero odit facilis.</p>
+                    <ul class="footer-lists">
+                        <li class="footer-list"><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                        <li class="footer-list"><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                        <li class="footer-list"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                        <li class="footer-list"><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h3 class="footer-heading"> Quick Links</h3>
+                    <ul class="footer-lists">
+                        <li class="footer-list">About Us</li>
+                        <li class="footer-list">Testimonials</li>
+                        <li class="footer-list">Terms of Service</li>
+                        <li class="footer-list">Privacy</li>
+                        <li class="footer-list">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h3 class="footer-heading"> Resources</h3>
+                    <ul class="footer-lists">
+                        <li class="footer-list">About Us</li>
+                        <li class="footer-list">Testimonials</li>
+                        <li class="footer-list">Terms of Service</li>
+                        <li class="footer-list">Privacy</li>
+                        <li class="footer-list">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h3 class="footer-heading"> Support</h3>
+                    <ul class="footer-lists">
+                        <li class="footer-list">About Us</li>
+                        <li class="footer-list">Testimonials</li>
+                        <li class="footer-list">Terms of Service</li>
+                        <li class="footer-list">Privacy</li>
+                        <li class="footer-list">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h3 class="footer-heading"> Company</h3>
+                    <ul class="footer-lists">
+                        <li class="footer-list">About Us</li>
+                        <li class="footer-list">Testimonials</li>
+                        <li class="footer-list">Terms of Service</li>
+                        <li class="footer-list">Privacy</li>
+                        <li class="footer-list">Contact Us</li>
+                    </ul>
+                </div>
+                      
+            </div>
+            <hr class="footer-hr">
+            <p class="copy">Copyright &copy;2025 All right reserved | This template is made with<i class="fa-solid fa-heart"></i> by <span class="footer-span">Bijoy</span> </p>
+
+        <!-- </section> -->
+    </footer>
+
     </main>
+<script src="/scripts.js"></script>
 </body>
+</html>
 
 
 
