@@ -430,6 +430,7 @@ nav{
     background-color: var(--primary-color);
     border-radius: 50%;
     color: white; 
+    line-height: 50px;
     
 }
 .footer-list{
