@@ -100,12 +100,14 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
    
 }
 .banner{
     width: 100%;
     height: 100%;
     flex-direction: row;
+    
    
 }
 .banner .banner-card{
@@ -113,6 +115,7 @@ nav{
     display: flex;
     flex-direction: column;
     color: white;
+    
     
     
 }
@@ -396,7 +399,7 @@ nav{
 .footers{
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    margin: 70px 0;
+    margin: 40px 0;
     
 }
 .footer{
@@ -438,7 +441,7 @@ nav{
     
 }
 .footer-list{
-    color: gray;
+    color: #A9A9A9;
     font-size: 20px;
     line-height: 36px;
     font-weight: bold;
@@ -459,7 +462,7 @@ nav{
     margin: 2px;
 }
 .footer-span{
-    color: gray;
+    color: #A9A9A9;
 }
 
 @media (max-width:992px){
@@ -509,16 +512,10 @@ nav{
     .footers{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 30px;
-    
-    
+    gap: 1px; 
 }
   
 }
-    
-
-
-
 @media (max-width:768px)
 {
     .flex-space-around{
@@ -590,16 +587,13 @@ nav{
     }
    .footers{
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    
-    
+    grid-template-columns: repeat(2, minmax(0, 1fr));  
 }
 }
 
-   
 
-
-@media (max-width:600px){
+@media (max-width:600px)
+{
     .flex-space-around{
         flex-direction: column;
         gap: 10px;
@@ -619,8 +613,148 @@ nav{
    .practices{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+}
   
 }
-   
+@media (max-width:400px)
+{
+    .flex-space-around{
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 0;
+    }
+    #menu-container {
+    text-align: center;
+    margin: 16px 0;
+    }
+    #menu-icon{
+        display: inline-block;  
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+   .practices{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  
+    }
+    .nav-head{
+   padding: 5px;
+}
+/* -----------head------------------ */
+.header{
+    height: 100%;
+}
+.header .banner-card{
+    height: 50%;
+}
+.header .form-start{
+    height: 50%;
+}
+ .banner-card-head{
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+ .form-head{
+    font-size: 22px;
+    margin: 18px 0;
+ }
+
+ .form-element{
+    margin-bottom: 28px;
+    margin-left: 10px;
+    font-size: 18px;
+ }
+.form-btn{
+    font-size: 18px;
+}
+/* -----------practice area------------ */
+.practice-areas{
+    padding: 10px;
     
+}
+.header-section{
+    margin-top: 40px;
+    padding: 16px;
+}
+.header-about{
+    text-align: center;
+}
+    .appointment-areas{
+    padding: 10px;
+}
+/* -----------appointment------------ */
+.ap-desc{
+    padding-left: 0;
+}
+
+.appointment-name{
+    margin-bottom: 5px;
+}
+.ap-btn{
+    padding: 10px;
+    font-size: 20px;
+}
+/* --------------customer------------- */
+.customer-areas{
+    padding: 10px;
+}
+.section-heading{
+    padding-top: 10px;
+    text-align: center;
+    margin: 1px;
+}
+.customer-profile{
+    margin-top: 10px; 
+}
+.customer-desc{
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.solution-areas{ 
+    margin-top: 100px;
+    padding: 10px; 
+}
+/* -------footer------------- */
+.footer-section{
+    min-height: 75vh;
+    padding: 40px 50px;
+}
+.footers{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 5px;
+    margin: 10px 0; 
+}
+.ftr-about{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.footer-pg{
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    
+}
+.footer-heading{
+    margin-bottom: 16px;
+    margin-top: 1px;
+    font-size: 28px;
+}
+.footer-list{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-right: 1px;
+}
+.footer-hr{
+    margin-top: 16px;
+}
+.copy{
+    margin-top: 30px;
+    line-height: 26px;
+}
 }
